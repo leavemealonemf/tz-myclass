@@ -13,13 +13,3 @@ npm i
 
 npm run start
 ```
-
-Или запустить в docker
-
-```bash
-git clone https://github.com/leavemealonemf/tz-myclass.git
-
-cd tz-myclass
-
-docker compose up -d --build
-```
