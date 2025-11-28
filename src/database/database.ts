@@ -10,6 +10,9 @@ const db: Knex = knex({
     min: 2,
     max: 10
   }
+}).on("connection-error", (err) => {
+  console.error("db conn error:", err);
+  process.exit(-1);
 });
 
 export default db;
